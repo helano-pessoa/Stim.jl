@@ -2,7 +2,7 @@ using LinearAlgebra
 
 export dantzig_relaxation
 
-function dantzig_relaxation(weights, profits, capacty)
+function dantzig_relaxation(weights, profits, capacity)
     density = [p/w for (p,w) in zip(profits, weights)]
     sorted_density = reverse(sortperm(density))
 

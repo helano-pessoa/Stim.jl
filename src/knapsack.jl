@@ -29,9 +29,10 @@ Mathematical Model:
 """
 function knapsack(weights, profits, cap)
     model = Model(Cbc.Optimizer)
-    @variable(model, x[1:length(profits)], Bin)
-    @constraint(model, sum(weights[i]*x[i] for i=1:length(profits)) <= cap)
-    @objective(model, Max, sum(profits[i]*x[i] for i=1:length(profits)))
+    I = eachindex(profits)
+    @variable(model, x[I], Bin)
+    @constraint(model, sum(weights[i] * x[i] for i in I) <= cap)
+    @objective(model, Max, sum(profits[i] * x[i] for i in I))
     optimize!(model)
     
     return model, objective_value(model), value.(x)

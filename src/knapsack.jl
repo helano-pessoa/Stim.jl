@@ -12,7 +12,7 @@ Mathematical Model:
 
 ``I``
 
-``Min ∑ profits(i).x(i)``
+``Max ∑ profits(i).x(i)``
 
 ``i=1``
 
@@ -24,7 +24,7 @@ Mathematical Model:
    
 ``i=1``
 
-``x(i) ⩾ 0                                ∀ i 𝟄 I``
+``x(i) ∈ {0, 1}                           ∀ i ∈ I``
 
 """
 function knapsack(weights, profits, cap)

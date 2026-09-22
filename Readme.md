@@ -9,11 +9,11 @@ Repositório acadêmico de Tópicos Especiais em Matemática Industrial, com Jul
 - `test/runtests.jl`: testes existentes, não reexecutados nesta revisão.
 - `Project.toml`: dependências do projeto.
 
-## Estado e relação com o ORKit
+## Estado do projeto
 
-Estudo acadêmico preservado, potencial referência para a futura trilha Julia/JuMP. Não é um pacote de produção nem uma dependência do novo piloto. Antes de integrá-lo, revisar a compatibilidade, validar os testes e atualizar a documentação matemática. Foi identificado um texto “Min” na docstring da mochila enquanto o código maximiza; a documentação foi corrigida para refletir o código.
+Estudo acadêmico preservado, com potencial como referência de Julia/JuMP. Não é um pacote de produção. Antes de reutilizá-lo, revisar a compatibilidade, validar os testes e atualizar a documentação matemática. Foi identificado um texto “Min” na docstring da mochila enquanto o código maximiza; a documentação foi corrigida para refletir o código.
 
-O trabalho educacional atual está em [orkit-free](https://github.com/helano-pessoa/orkit-free). A licença existente em `LICENSE.md` permanece inalterada.
+A licença existente em `LICENSE.md` permanece inalterada.
 
 ## Pendências técnicas identificadas por inspeção
 
